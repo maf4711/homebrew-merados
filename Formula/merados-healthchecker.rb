@@ -1,9 +1,8 @@
 class MeradosHealthchecker < Formula
   desc "Trading Portfolio Healthcheck Tool - 100% Lokal"
   homepage "https://github.com/maf4711/merados-healthchecker"
-  url "https://github.com/maf4711/merados-healthchecker/archive/refs/heads/elated-blackwell.tar.gz"
-  version "2.0.0"
-  sha256 "f134cb1da3acea96d21d6720e82ef58d9b08c2374b5ce9412d79bd350f8a6903"
+  url "https://github.com/maf4711/merados-healthchecker/archive/refs/tags/v2.0.0.tar.gz"
+  sha256 "d9a8b8003ba5cba8efaee8b403af80cd47cf54ae321fdd569db5b605ee46c3f7"
   license "MIT"
 
   depends_on "python@3.12"
