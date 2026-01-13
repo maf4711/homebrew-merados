@@ -1,8 +1,8 @@
 class MeradosHealthchecker < Formula
   desc "Trading Portfolio Healthcheck Tool - 100% Lokal"
   homepage "https://github.com/maf4711/merados-healthchecker"
-  url "https://github.com/maf4711/merados-healthchecker/archive/refs/tags/v2.0.0.tar.gz"
-  sha256 "d9a8b8003ba5cba8efaee8b403af80cd47cf54ae321fdd569db5b605ee46c3f7"
+  url "https://github.com/maf4711/merados-healthchecker/archive/refs/tags/v2.1.0.tar.gz"
+  sha256 "e399796c3ddabe3589ecd9e30b86555988dd100f1a01dc5b5fbc250a541f3813"
   license "MIT"
 
   depends_on "python@3.12"
@@ -21,17 +21,10 @@ class MeradosHealthchecker < Formula
     <<~EOS
       Verwendung:
         merados-healthcheck                  # Standard-Analyse
+        merados-healthcheck --selfheal       # Selfhealing mit Bestätigung
         merados-healthcheck --user 13997     # Nur User 13997
         merados-healthcheck --json           # JSON Output
         merados-healthcheck --help           # Alle Optionen
-
-      Daten-Verzeichnis setzen:
-        merados-healthcheck --data-dir /pfad/zu/csv
-
-      Benötigte CSV-Dateien:
-        - users_rows (1).csv
-        - portfolios_rows (6).csv
-        - transactions_rows (4).csv
     EOS
   end
 
